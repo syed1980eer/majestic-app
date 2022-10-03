@@ -1,0 +1,154 @@
+.container-fluid{
+    display: grid !important;
+}
+
+.card{
+    max-width: 1650px !important;
+    margin: 15px;
+    padding-top: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* .item-images{
+    padding: 15px 15px 10px 75px;
+} */
+
+.item-images img{
+    width: 300px !important;
+    height: 300px !important;
+}
+.img-wrapper{
+    overflow: hidden;
+    padding: 15px 15px 10px 75px;
+}
+
+.img-wrapper img{
+    transition: transform .5s ease;
+}
+
+.img-wrapper img:hover{
+    transform: scale(1.4);
+    cursor: zoom-in;
+}
+
+.item-images .card-content{
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+}
+
+.card-action button{
+    width: 65%;
+    margin: auto auto 8% auto;
+}
+
+a.disabled {
+    pointer-events: none;
+    cursor: default;
+}
+
+.order_summary{
+    padding: 2%;
+    height: 100%;
+    width: 50%;
+    margin-left: 25%
+}
+
+#order_unq_id{
+    color: red;
+    font-weight: bold;
+    width: 80%;
+    resize: none;
+    margin-left: 20%;
+    margin-top: -6.5% !important;
+    /* height: 38px; */
+    overflow:hidden;
+    border:none;
+    background-color: white;
+}
+
+.subtotal_div{
+    float: right;
+    margin-top: -40px
+}
+
+.vat_div{
+    float: right;
+    margin-top: -40px
+}
+
+.gTotal_div .cart-total{
+    float: right;
+    margin-left: 20%;
+    align-self: center;
+    text-align: right;
+    color: red;
+    margin-bottom: 1%;
+    resize: none;
+    width:100px;
+    height: 35px;
+    overflow:hidden;
+    border:none;
+    background-color: white;
+    font-size: 18px;
+}
+
+.totalAmount_div{
+    /* margin-top: 20%; */
+    color: red;
+    font-weight: bold;
+    float: right;
+    margin-top: -8%;
+}
+
+#order_save_customerName{
+    margin-left: 2%;
+
+}
+
+@media(max-width:1024px) {
+    html{
+        font-size: 60%;
+    }
+
+    .linked_tbl tr{
+        font-size: 0.7rem;
+    }
+    .orders_tbl tr{
+        font-size: 0.7rem;
+    }
+    #order_unq_id{
+        color: red;
+        font-weight: bold;
+        width: 80%;
+        resize: none;
+        margin-left: 15%;
+        margin-top: -5% !important;
+        /* height: 38px; */
+        overflow:hidden;
+        border:none;
+        background-color: white;
+    }
+
+    .totalAmount_div{
+        margin-top: -5%;
+    }
+    .subtotal_div{
+        float: right;
+        margin-top: -20px;
+        margin-right: 1%;
+    }
+    .vat_div{
+        float: right;
+        margin-top: -20px;
+        margin-right: 1%;
+    }
+
+    .gTotal_div .cart-total{
+        float: right !important;
+        margin-right: -6.5%;
+    }
+
+    .select2-container {
+        height: calc(1.5em + .75rem + 2px) !important;
+    }
+}
